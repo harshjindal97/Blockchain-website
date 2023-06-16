@@ -1,7 +1,7 @@
 
 import './App.css'
 // import Navbar from './components/navbar/Navbar'
-import { Navbar } from './components'
+import { Header, Navbar } from './components'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <div>
       <div className='bg-color'>
         <Navbar/>
+        <Header/>
       </div>
     </div>
   )

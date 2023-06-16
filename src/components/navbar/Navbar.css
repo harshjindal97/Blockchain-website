@@ -9,7 +9,7 @@ a{
 .crypt_navbar-logo{
     display: flex;
     align-items: center;
-    margin-left: 8rem;
+    padding-left: 8rem;
     gap: 0.2rem;
 }
 
@@ -24,15 +24,82 @@ a{
     margin-right: 8rem;
     gap: 1rem;
 }
-
+.crypt_navbar-logo h1{
+    color: white;
+}
 .crypt_navbar-container a {
     font-size: 20px;
 }
-.crypt_navbar-container button{
+.crypt_navbar-container_button button{
     font-size: 15px;
     color: white;
     font-weight: 300;
     background-color: rgba(219, 85, 1, 0.786);
     border: none;
-    border-radius: 3px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+
+.crypt_navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background: rgb(43, 33, 126);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    /* margin-top: 1rem; */
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.crypt_navbar-menu_container p :hover {
+    background: black;
+}
+
+.crypt_navbar-menu{
+    display: none;
+}
+
+.crypt_navbar-menu{
+    align-items: center;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .crypt_navbar-container {
+        display: none;
+    }
+
+    .crypt_navbar-menu{
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width: 550px) {
+    .crypt_navbar-container {
+        display: none;
+    }
+
+    .crypt_navbar-menu{
+        display: flex;
+    }
+
+    .crypt_navbar-menu_container{
+        max-width: 150px;
+    }
+    .crypt_navbar-logo{
+        padding-left: 3rem;
+    }
+    
 }
