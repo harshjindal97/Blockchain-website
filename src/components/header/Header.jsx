@@ -1,6 +1,9 @@
 import './Header.css'
 
 import React from 'react'
+import logo from '../../assets/logo.png'
+import info from '../../assets/info.png'
+
 
 const Header = () => {
 
@@ -36,7 +39,23 @@ const Header = () => {
             </div>
         </div>
         <div className='crypt_header-content'>
-            <div className='crypt_header-content_div'>dafd</div>
+            <div className='crypt_header-content_div'>
+                <div className='crypt_header-content_div-img'>
+                    <div className='crypt_header-content_div_logo'><img src={logo} alt="" /></div>
+                    <div className='crypt_header-content_div_info'><img src={info} alt="" /></div>
+                </div>
+            </div>
+            <div className='crypt_header-content_form'>
+                <div className='crypt_header-content_form-function'>
+                    <input type="text" placeholder='Address To' />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                </div>
+                <div>
+
+                </div>
+            </div>
         </div>
     </div>
   )

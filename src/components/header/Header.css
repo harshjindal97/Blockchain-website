@@ -47,17 +47,63 @@ table{
     
 }
 
+.crypt_header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .crypt_header-content_div {
     background: linear-gradient(157deg, rgba(7, 19, 53, 1) 0%, rgba(61, 93, 187, 1) 50%, rgba(8, 4, 70, 1) 100%);
-    width: 200px;
+    width: 300px;
     height: 200px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
     /* justify-content: center;
     align-items: center; */
     /* flex: 1; */
 }
 
-@media screen and (max-width:750px) {
+.crypt_header-content_div-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.crypt_header-content_div_logo img {
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+}
+.crypt_header-content_div_info img {
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+}
+
+.crypt_header-content_form{
+    margin: 2rem;
+    background-color: rgb(50, 49, 71);
+    border-radius: 20px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.crypt_header-content_form-function input{
+    margin: 10px 15px ;
+    padding: 10px 0px;
+    width: 90%;
+    background: rgb(71, 71, 104);
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 19px;
+}
+
+@media screen and (max-width:850px) {
     .crypt_header{
         display: flex;
         flex-direction: column;
@@ -68,5 +114,32 @@ table{
 
     .crypt_header-container{
         max-width: fit-content;
+    }
+
+    .crypt_header-content_form{
+        /* width: 300px; */
+    }
+    .crypt_header-content_form-function input{
+        /* width: 86%; */
+    }
+}
+@media screen and (max-width:500px) {
+    .crypt_header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .crypt_header-container{
+        max-width: fit-content;
+    }
+
+    .crypt_header-content_form{
+        width: 300px;
+    }
+    .crypt_header-content_form-function input{
+        width: 86%;
     }
 }
