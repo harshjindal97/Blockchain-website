@@ -47,11 +47,13 @@ const Header = () => {
             </div>
             <div className='crypt_header-content_form'>
                 <div className='crypt_header-content_form-function'>
-                    <input type="text" placeholder='Address To' />
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
+                    <div className='first_input'><input type="text" placeholder='Address To' /></div>
+                    <input type="text" placeholder='Amount (ETH)'/>
+                    <input type="text" placeholder='Keyword (GIF)'/>
+                    <input type="text" placeholder='Enter Message'/>
                 </div>
+                <hr />
+                <button>Send Now</button>
                 <div>
 
                 </div>

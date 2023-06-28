@@ -54,7 +54,44 @@ table{
     align-items: center;
 }
 
+.crypt_header-content_form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.crypt_header-content_form button {
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+    width: 90%;
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgb(50, 49, 71);
+    border: 1px solid rgb(132, 125, 125);
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.first_input{
+    margin-top: 1.5rem;
+}
+
+.crypt_header-content_form button:hover{
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+    width: 90%;
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgb(71, 62, 236);
+    border: 1px solid rgb(132, 125, 125);
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 .crypt_header-content_div {
     background: linear-gradient(157deg, rgba(7, 19, 53, 1) 0%, rgba(61, 93, 187, 1) 50%, rgba(8, 4, 70, 1) 100%);
     width: 300px;
@@ -94,13 +131,17 @@ table{
 
 .crypt_header-content_form-function input{
     margin: 10px 15px ;
-    padding: 10px 0px;
+    padding: 10px 5px;
     width: 90%;
     background: rgb(71, 71, 104);
     border: none;
     border-radius: 8px;
-    text-align: center;
     font-size: 19px;
+}
+
+hr{
+    width: 90%;
+    border: 0.5px solid rgb(140, 133, 133);
 }
 
 @media screen and (max-width:850px) {
@@ -116,12 +157,7 @@ table{
         max-width: fit-content;
     }
 
-    .crypt_header-content_form{
-        /* width: 300px; */
-    }
-    .crypt_header-content_form-function input{
-        /* width: 86%; */
-    }
+    
 }
 @media screen and (max-width:500px) {
     .crypt_header{
